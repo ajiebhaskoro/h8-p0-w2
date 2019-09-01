@@ -1,0 +1,81 @@
+1. NEWTON SECOND LAW
+
+// Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk menghitung resultan gaya pada sebuah 
+// mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
+// ΣF = m x a
+
+f = resultan gaya (Newton)
+m = massa benda (kg)
+a = percepatan benda (m/s2)
+hitung nilai f
+f=m*a
+
+START
+    STORE "f" with any value
+    STORE "m" with value "600" kg
+    STORE "a" with value "2" m/s2
+    CALCULATE (f)
+        f = m MULTI a
+    DISPLAY f
+END 
+
+
+2. TAHUN KABISAT
+
+// Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari 
+// berarti tahun tersebut merupakan tahun kabisat.
+
+// Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+
+//     Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+//     Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+
+// Buatlah algoritma & pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+
+START
+STORE "Kabisat" with value true
+STORE "Year" with value anything
+    IF "Year" MODULUS 4 === 0
+        DISPLAY "Kabisat" = TRUE
+    ELSE
+        DISPLAY "Kabisat" = FALSE
+    END IF
+END
+
+3. LAUNDRY DAY
+
+// Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan 
+// dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+
+// Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma & pseudocode 
+// perulangan!
+
+START
+STORE "pakaian" with value 20
+WHILE "pakaian" higher than 0 then
+    DISPLAY "foxie memasukkan 1 pakaian"
+    SET "pakaian" to "pakaian" MINUS 1 
+    END WHILE
+DISPLAY "Semua pakaian telah dimasukkan ke mesin cuci"
+END
+
+4. PERIKSA KUKU
+
+// Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling kelas. 
+// Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan menghukum siswa/siswi tersebut, 
+// jika tidak guru akan memuji siswa/siswi tersebut.
+
+// Buatlah algoritma & pseudocode untuk permasalahan diatas.
+
+START
+STORE "hitungSiswa" with 40
+STORE "kukuPanjang" with TRUE
+STORE "i" with 0
+
+WHILE "i" <= "hitungSiswa" DO
+    INCREMENT "i" by 1
+    IF "kukuPunjang" is equal with TRUE
+        DISPLAY "BAGUS"
+    ELSE DISPLAY "TAMPOL"
+    END IF
+END
